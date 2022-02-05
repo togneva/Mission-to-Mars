@@ -60,7 +60,6 @@ def featured_image(browser):
     try:
         # find the relative image url
         img_url_rel = img_soup.find('img', class_='fancybox-image').get('src')
-        img_url_rel
 
     except AttributeError:
         return None
